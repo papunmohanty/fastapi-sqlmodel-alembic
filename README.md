@@ -5,13 +5,7 @@
 
 ```sh
 docker-compose exec -it db psql --username=postgres --dbname=foo
-docker-compose exec -it db psql --username=postgres --dbname=foo
 docker-compose exec web alembic init -t async migrations
-docker-compose exec web alembic revision --autogenerate -m "init"
-docker-compose exec web alembic init -t async migrations
-docker-compose exec web ls -ltrha
-docker-compose exec web alembic init -t async migrations
-docker-compose exec web alembic revision --automigrate -m "init"
 docker-compose exec web alembic revision --autogenerate -m "init"
 docker-compose exec web alembic upgrade head
 docker-compose exec web alembic revision --autogenerate -m "add year"
