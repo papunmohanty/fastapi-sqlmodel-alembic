@@ -1,7 +1,6 @@
 # FastAPI + SQLModel + Alembic
 
-
-# Docker Compose Commands executed in this lab
+## Docker Compose Commands executed in this lab
 
 ```sh
 docker-compose exec -it db psql --username=postgres --dbname=foo
